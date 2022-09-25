@@ -1,22 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background: black;
+    height: 100%;
+}
+
+.box {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+    
+
+.title-container,
+.recipe-container {
+    color: #fff;
+    background-image: linear-gradient(to bottom right, rgb(0,0,160),rgb(0,0,80));
+    padding: 20px 0;
+    border: 5px rgb(204, 200, 200) solid;
+    border-radius: 20px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.title-container {
+    height: 350px;
+}
+  
+
 h1 {
-    text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
 }
 
 img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    border: 5px rgb(204, 200, 200) solid;
+    border-radius: 20px;
+    height: 300px;
+}
+  
+.recipe-container {
+    justify-content: space-evenly;
+    flex: 1;
 }
 
-ul {
-    margin-left: 10%;
+
+.recipe-item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
